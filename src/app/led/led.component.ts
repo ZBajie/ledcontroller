@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
-import {
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-} from '@ionic/angular/standalone';
+import { IonContent } from '@ionic/angular/standalone';
+import { HeaderComponent } from '../components/header/header.component';
 
 @Component({
   standalone: true,
   selector: 'app-led',
   templateUrl: './led.component.html',
   styleUrls: ['./led.component.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent],
+  imports: [IonContent, HeaderComponent],
 })
 export class LedComponent {
   constructor() {}

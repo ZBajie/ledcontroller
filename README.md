@@ -32,10 +32,10 @@ Connect mobile and press play.
 
 ## Work Items Pending
 
-- Bluetooth connection
+- Bluetooth connection component
 - Scss
-- Brightness
-- Colorpicker
+- Brightness component
+- Colorpicker component
 
 ## Work Items In Process
 
@@ -48,3 +48,4 @@ Connect mobile and press play.
 - Initiated Git and added .gitignore
 - Created Readme file
 - Routing, Ion-tabs
+- Header component
