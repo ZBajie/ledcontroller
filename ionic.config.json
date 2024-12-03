@@ -1,0 +1,7 @@
+{
+  "name": "ledcontroller",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
