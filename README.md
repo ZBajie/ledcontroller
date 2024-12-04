@@ -5,8 +5,9 @@ An app to control an rgb-led strip conected to an arduino.
 The app sends a string with a comand and a value with bluetooth to the arduino.
 
 The string that is sent should look like this:
-Brigthness : <brigthness#88> , Value between 0-255.
-Color: <setLedColorAll#128,128,128> , RGB values.
+
+- Brigthness : <brigthness#88> , Value between 0-255.
+- Color: <setLedColorAll#128,128,128> , RGB values.
 
 # Installation
 
@@ -32,15 +33,15 @@ Connect mobile and press play.
 
 ## Work Items Pending
 
-- Bluetooth connection component
 - Scss
 - Brightness component
 - Colorpicker component
 
 ## Work Items In Process
 
-- Home
+- Home page
 - Led page
+- Bluetooth connection page
 
 ## Work Items Done
 

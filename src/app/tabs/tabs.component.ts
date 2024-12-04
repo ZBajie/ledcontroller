@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { addIcons } from 'ionicons';
-import { home, flash } from 'ionicons/icons';
+import { home, flash, bluetooth, bulb } from 'ionicons/icons';
 import {
   IonTabs,
   IonTabBar,
@@ -18,6 +18,6 @@ import {
 })
 export class TabsComponent {
   constructor() {
-    addIcons({ home, flash });
+    addIcons({ home, bluetooth, flash, bulb });
   }
 }
