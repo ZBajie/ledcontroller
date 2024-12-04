@@ -34,14 +34,13 @@ Connect mobile and press play.
 ## Work Items Pending
 
 - Scss
-- Brightness component
 - Colorpicker component
 
 ## Work Items In Process
 
 - Home page
 - Led page
-- Bluetooth connection page
+- Brightness component
 
 ## Work Items Done
 
@@ -50,3 +49,4 @@ Connect mobile and press play.
 - Created Readme file
 - Routing, Ion-tabs
 - Header component
+- Bluetooth connection page

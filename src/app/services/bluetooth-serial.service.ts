@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Platform } from '@ionic/angular';
+import { BehaviorSubject } from 'rxjs';
 
 declare var bluetoothSerial: any; // Cordova plugin object
 
@@ -7,6 +8,9 @@ declare var bluetoothSerial: any; // Cordova plugin object
   providedIn: 'root',
 })
 export class BluetoothSerialService {
+  private _connected = new BehaviorSubject<boolean>(false);
+  public connected$ = this._connected.asObservable();
+
   constructor(private platform: Platform) {}
 
   private ensureReady(): Promise<void | string> {
@@ -43,7 +47,10 @@ export class BluetoothSerialService {
         new Promise<void>((resolve, reject) => {
           bluetoothSerial.connect(
             address,
-            () => resolve(),
+            () => {
+              this._connected.next(true);
+              resolve();
+            },
             (error: any) => reject(error)
           );
         })
@@ -79,7 +86,10 @@ export class BluetoothSerialService {
       () =>
         new Promise<void>((resolve, reject) => {
           bluetoothSerial.disconnect(
-            () => resolve(),
+            () => {
+              this._connected.next(false);
+              resolve();
+            },
             (error: any) => reject(error)
           );
         })

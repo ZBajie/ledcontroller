@@ -1,5 +1,31 @@
 <app-header />
 
-<ion-content [fullscreen]="true">
-  <p>This is the Blutooth page</p>
+<ion-content color="medium" class="content" [fullscreen]="true">
+  <h1>Arduino Control</h1>
+
+  <ion-button *ngIf="(connected$ | async) === false" (click)="enableBluetooth()"
+    >Enable Bluetooth</ion-button
+  >
+
+  <div *ngIf="devices.length && (connected$ | async) === false">
+    <h2>Available Devices:</h2>
+    <ion-list class="list">
+      <ion-item
+        *ngFor="let device of devices"
+        (click)="connect(device.id, device.name)"
+      >
+        {{ device.name }}
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="(connected$ | async) === true">
+    <h2>Connected to {{ deviceName }}</h2>
+
+    <ion-button *ngIf="(connected$ | async) === true" (click)="disconnect()"
+      >Disconnect</ion-button
+    >
+  </div>
+
+  <p>{{ statusMessage }}</p>
 </ion-content>
