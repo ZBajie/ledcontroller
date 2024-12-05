@@ -15,6 +15,9 @@ ionic start ledcontroller blank --type=angular
 
 ## Running
 
+Git clone
+npm install
+
 ### For web
 
 ionic serve
@@ -34,13 +37,12 @@ Connect mobile and press play.
 ## Work Items Pending
 
 - Scss
-- Colorpicker component
 
 ## Work Items In Process
 
 - Home page
 - Led page
-- Brightness component
+- Colorpicker component
 
 ## Work Items Done
 
@@ -50,3 +52,4 @@ Connect mobile and press play.
 - Routing, Ion-tabs
 - Header component
 - Bluetooth connection page
+- Brightness component

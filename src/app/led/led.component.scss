@@ -1,0 +1,17 @@
+.content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+h1 {
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.list {
+  width: 250px;
+  margin: auto;
+}

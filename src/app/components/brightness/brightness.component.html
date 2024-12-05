@@ -1,0 +1,13 @@
+<h2>Brightness</h2>
+
+<ion-item class="range">
+  <ion-range
+    [(ngModel)]="brightness"
+    min="0"
+    max="255"
+    step="1"
+    (ionChange)="onBrightnessChange($event)"
+  ></ion-range>
+</ion-item>
+<p>Brightness: {{ brightness }}</p>
+<p *ngIf="statusMessage">{{ statusMessage }}</p>
