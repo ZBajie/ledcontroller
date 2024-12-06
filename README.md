@@ -41,8 +41,6 @@ Connect mobile and press play.
 ## Work Items In Process
 
 - Home page
-- Led page
-- Colorpicker component
 
 ## Work Items Done
 
@@ -53,3 +51,5 @@ Connect mobile and press play.
 - Header component
 - Bluetooth connection page
 - Brightness component
+- Colorpicker component
+- Led page

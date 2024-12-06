@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BluetoothSerialService } from 'src/app/services/bluetooth-serial.service';
-import { IonItem, IonButton, IonRange } from '@ionic/angular/standalone';
+import { IonItem, IonRange } from '@ionic/angular/standalone';
 
 @Component({
   standalone: true,
   selector: 'app-brightness',
   templateUrl: './brightness.component.html',
   styleUrls: ['./brightness.component.scss'],
-  imports: [CommonModule, FormsModule, IonItem, IonButton, IonRange],
+  imports: [CommonModule, FormsModule, IonItem, IonRange],
 })
 export class BrightnessComponent {
   public brightness: number = 80;

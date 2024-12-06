@@ -1,0 +1,18 @@
+<div class="color-picker-container">
+  <h2>Chose a color</h2>
+  <input
+    [(colorPicker)]="color"
+    [style.background]="color"
+    [cpOKButton]="true"
+    [cpOKButtonText]="'Select'"
+    [cpCancelButton]="true"
+    [cpSaveClickOutside]="false"
+    [cpOutputFormat]="'rgba'"
+    [cpAddColorButton]="false"
+    [cpAlphaChannel]="'disabled'"
+    (colorPickerChange)="onColorChange()"
+    readonly
+  />
+  <p>RGB: {{ rgbColor }}</p>
+  <p *ngIf="statusMessage">{{ statusMessage }}</p>
+</div>
