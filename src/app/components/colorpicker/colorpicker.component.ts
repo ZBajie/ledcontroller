@@ -26,7 +26,6 @@ export class ColorpickerComponent {
   async setColor() {
     try {
       await this.bluetoothService.write(`<setLedColorAll#${this.rgbColor}>`);
-      this.statusMessage = 'Color set successfully!';
     } catch (e) {
       this.statusMessage = 'Failed to set color';
     }

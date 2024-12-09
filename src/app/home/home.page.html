@@ -1,5 +1,22 @@
 <app-header />
 
-<ion-content color="medium" class="content" [fullscreen]="true">
-  <p>This is the home page</p>
+<ion-content color="medium" class="content ion-padding" [fullscreen]="true">
+  <h1>Led controller for Arduino</h1>
+  <ion-img src="assets/home.webp" alt="Arduino app picture"></ion-img>
+  <p>This is an app to control an RGB LED strip using Bluetooth.</p>
+  <p>
+    The app connects to an Arduino with an HC-05 Bluetooth module and sends
+    strings with commands. These commands are interpreted by the Arduino to
+    control the LED. The Arduino must be programmed to interpret the commands.
+  </p>
+
+  <p>The commands sent are:</p>
+  <p>
+    Brightness : &lt;brightness#80&gt; , where the value is between 0 and 255.
+  </p>
+
+  <p>
+    Color: &lt;setLedColorAll#128,128,128&gt; , where the values are RGB
+    components.
+  </p>
 </ion-content>

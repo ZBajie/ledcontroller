@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonContent } from '@ionic/angular/standalone';
+import { IonContent, IonImg } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../components/header/header.component';
 
 @Component({
@@ -7,7 +7,7 @@ import { HeaderComponent } from '../components/header/header.component';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonContent, HeaderComponent],
+  imports: [IonImg, IonContent, HeaderComponent],
 })
 export class HomePage {
   constructor() {}
