@@ -187,3 +187,4 @@ void executeCommands(String command, String values) {
 - Colorpicker component
 - Led page
 - Home page
+- Rainbow component
